@@ -1,15 +1,20 @@
-.card > input{
-  width: 350px;
+.card{
+  width: 1050px;
+  height:3050px;
   background-color: aliceblue;
   text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav{
   display: flex;
-  
+  justify-content: space-between;
 }
 .nav-centre{
   display: flex;
+  
 }
 .heading{
   font-family:monospace;
