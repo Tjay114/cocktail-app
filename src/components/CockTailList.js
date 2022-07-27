@@ -1,9 +1,22 @@
 import React from "react";
+// import { useGlobalContext } from "../context";
 
-function CockTailList(){
+const CockTailList = () => {
+    const [cocktails, loading ] = useGlobalContext();
+
+    if(loading) {
+        return <Loading />
+    } 
+    if(cocktails.length < 1){
+        return(
+        <h2 className="section-title">
+            no cocktail match your search
+        </h2>)
+        
+    }
     return(
        <div>
-        
+            <h2>cocktail list</h2>
        </div>
     )
 }

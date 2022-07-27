@@ -1,19 +1,18 @@
-
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
 import './App.css';
-import NavBar from './components/NavBar';
-import SearchForm from './components/SearchForm';
-import CockTailList from './components/CockTailList'
-
- 
-function App() {
+import NavBar from './components/NavBar'; 
+function App() { 
   return (
-    <div className='App'>
-
-     <NavBar />
-     <SearchForm />
-     <CockTailList />
-     
-    </div>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route exact path="/">
+          <Home/>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

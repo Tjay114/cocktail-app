@@ -1,6 +1,6 @@
 .card{
-  width: 1050px;
-  height:3050px;
+  width: 1400px;
+  height:800px;
   background-color: aliceblue;
   text-align: left;
   display: flex;
@@ -15,6 +15,23 @@
 .nav-centre{
   display: flex;
   
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.links{
+  display: flex;
+}
+li{
+  list-style-type: none;
+  padding: 1rem;
+}
+.photo{
+  width: 200px;
+  height: 100px
 }
 .heading{
   font-family:monospace;

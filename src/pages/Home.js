@@ -1,13 +1,16 @@
 import React from "react";
-import CockTailList from "..components/CockTailList";
-import SearchForm from "../components/SearchForm";
+// import CockTailList from "../components/CockTailList";
+// import SearchForm from "../components/SearchForm";
+import FetchData from "./FetchData";
 
 const Home = () => {
     return (
-        <main>
-            <SearchForm />
-            <CockTailList />
-        </main>
+      <main>
+        <h2>Home</h2>
+        <FetchData />
+        {/* <SearchForm/>
+        <CockTailList/> */}
+      </main>
     )
 }
 

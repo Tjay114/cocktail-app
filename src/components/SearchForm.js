@@ -1,13 +1,15 @@
 import React from "react";
-import "../App.css"
+// import { useGlobalContext } from "../context"
 
 
-function SearchForm(){
+const SearchForm = () => {
+    // const { setSearchTerm } = useGlobalContext()
     return(
         <div className="card">
-            <input type="text" placeholder="Search Cocktail" />
+           <h1>search form component</h1>
         </div>
     )
 }
 
+ 
 export default SearchForm;

@@ -1,23 +1,19 @@
 import React from "react";
-import { NavLink } from "react-bootstrap";
+import cocktails from "../images/image15.jpg"
+
 
 function NavBar(){
-    return(
-        <div>
-            <nav className="nav">
-                <p className="heading">COCKTAILS AND CULTURE</p>
-
-                <div className="nav-centre">
-
-                <NavLink href="#home">Home</NavLink>
-                <NavLink href="#features">Features</NavLink>
-                <NavLink href="#about">About</NavLink>
-                <NavLink href="#ingredients">Ingredients</NavLink>
-                </div>
-               
-            </nav>
-        </div>
-    )
+return(
+    <div  className="header">
+        <img    src={cocktails} className="photo" />
+        <h2>Cocktails and Culture</h2>
+        <nav className="links">
+            <li href="#home">HOME</li>
+            <li href="#about">ABOUT</li>
+            
+        </nav>
+    </div>
+)
 }
 
 export default NavBar;
