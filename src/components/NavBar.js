@@ -1,17 +1,19 @@
 import React from "react";
-import cocktails from "../images/image15.jpg"
-
-
+import { NavLink } from "react-router-dom";
+// import cocktails from "../images/image15.jpg"
 function NavBar(){
 return(
     <div  className="header">
-        <img    src={cocktails} className="photo" />
         <h2>Cocktails and Culture</h2>
-        <nav className="links">
-            <li href="#home">HOME</li>
-            <li href="#about">ABOUT</li>
-            
-        </nav>
+        {/* <img    src={cocktails} className="photo" /> */}
+       <div className="header">
+        <NavLink to="/">
+            Home
+        </NavLink>
+        <NavLink to="/about">
+            About
+        </NavLink>
+       </div>
     </div>
 )
 }

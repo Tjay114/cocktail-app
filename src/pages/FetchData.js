@@ -14,8 +14,8 @@ function FetchData(){
             console.log(cocktails)
     return(
         <div>
-            <h1>fetch data component</h1>
-            
+        
+          
         </div>
     )
 }

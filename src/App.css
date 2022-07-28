@@ -1,11 +1,10 @@
-.card{
-  width: 1400px;
-  height:800px;
-  background-color: aliceblue;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.body{
+  background-color: lightblue;
+}
+.form-control>input{
+background-color: aliceblue;
+margin-top: 120px;
+margin-left: 500px;
 }
 
 .nav{
@@ -30,10 +29,17 @@ li{
   padding: 1rem;
 }
 .photo{
-  width: 200px;
-  height: 100px
+  width: 150px;
+  height: 80px
 }
 .heading{
   font-family:monospace;
+}
+
+.footer{
+  text-align: center;
+  padding: 3px;
+  color: black;
+  display: block;
 }
 
