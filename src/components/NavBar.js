@@ -5,13 +5,15 @@ function NavBar(){
 return(
     <div  className="header">
         <h2>Cocktails and Culture</h2>
-        {/* <img    src={cocktails} className="photo" /> */}
        <div className="header">
         <NavLink to="/">
             Home
         </NavLink>
         <NavLink to="/about">
             About
+        </NavLink>
+        <NavLink to="/cocktails">
+            Cocktails
         </NavLink>
        </div>
     </div>

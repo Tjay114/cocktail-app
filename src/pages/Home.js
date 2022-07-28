@@ -7,7 +7,6 @@ import Footer from "../components/Footer"
 const Home = () => {
     return (
       <main>
-        <h2>Home</h2>
         <FetchData />
         <SearchForm/>
         <CockTailList/> 
