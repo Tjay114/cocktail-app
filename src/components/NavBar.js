@@ -15,6 +15,9 @@ return(
         <NavLink to="/cocktails">
             Cocktails
         </NavLink>
+        <NavLink to="/ingredients">
+            Ingredient
+        </NavLink>
        </div>
     </div>
 )

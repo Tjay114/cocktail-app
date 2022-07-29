@@ -1,18 +1,15 @@
-import React, { useState } from "react";
+// import React from "react";
 
-function SearchForm (){
+// function SearchForm (handleChange){
    
-    return(
-        <section className="section">
-            <form className="search-form">
-                <div className="form-control">
-                    <input type="text" placeholder="Search Cocktail" />
-                </div>
-            </form>
-        </section>
-    )
-}
-
-   
-
-export default SearchForm;
+//     return(
+//         <section className="section">
+//             <form className="search-form">
+//                 <div className="form-control">
+//                     <input type="text" onChange={handleChange}placeholder="Search Cocktail" />
+//                 </div>
+//             </form>
+//         </section>
+//     )
+// }
+// export default SearchForm;

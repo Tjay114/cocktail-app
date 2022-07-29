@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './App.css';
 // import { BrowserRouter,Route, Switch } from "react-router-dom";
+import Ingredients from "./pages/Ingredients";
 import Home from "./pages/Home";
 import About from "./pages/About";
 // import Footer from "./components/Footer"
@@ -10,27 +11,48 @@ import { Route, Switch } from "react-router-dom";
 import Cocktail from "./components/Cocktail";
 function App() { 
   const [cocktails, setCocktails] = useState([]);
-
+  // 
+  // const [tailcock, setTailCock] = useState([])
   useEffect(() => {
     fetch("http://localhost:3000/drinks")
       .then((response) => response.json())
-      .then((data) => {
-        setCocktails(data);
-      });
+      .then((data) => 
+        setCocktails(data)
+      )
   }, []);
-            console.log(cocktails)
+            // console.log(cocktails)
+            // function handleChange(event){
+            //   setSearch(event.target.value)
+            //   const alcohol = cocktailsDisplay.filter((element)=>{
+            //     return(element.strDrink.toLowerCase().includes(search.toLowerCase))
+                
+            //   })
+            //   return(
+            //     <Cocktail cocktails={alcohol} />
+            //   )
+            // }
+
+            // const cocktailsDisplay = cocktails.filter((element)=>{
+            //   // console.log(element.strDrink)
+            //   element.strDrink.toLowerCase().includes(search.toLowerCase)
+            // })
+            // console.log(cocktailsDisplay)
+            
   return (
     <div>
       <NavBar />
       <Switch>
         <Route exact path="/">
-          <Home/>
+          <Home cocktailsDisplay={cocktails}/>
         </Route>
         <Route exact path="/about">
           <About/>
         </Route>
         <Route exact path="/cocktails">
           <Cocktail cocktails={cocktails}/>
+        </Route>
+        <Route exact path="/ingredients">
+          <Ingredients />
         </Route>
       </Switch>
     </div>
