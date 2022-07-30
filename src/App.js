@@ -6,11 +6,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 // import Footer from "./components/Footer"
 import NavBar from "./components/NavBar";
-// import SearchForm from "./components/SearchForm";
 import { Route, Switch } from "react-router-dom";
 import Cocktail from "./components/Cocktail";
 function App() { 
   const [cocktails, setCocktails] = useState([]);
+  const [drinks, setDrinks] = useState([]);
   // 
   // const [tailcock, setTailCock] = useState([])
   useEffect(() => {
@@ -18,8 +18,11 @@ function App() {
       .then((response) => response.json())
       .then((data) => 
         setCocktails(data)
+        
       )
+
   }, []);
+  
             // console.log(cocktails)
             // function handleChange(event){
             //   setSearch(event.target.value)
@@ -52,7 +55,7 @@ function App() {
           <Cocktail cocktails={cocktails}/>
         </Route>
         <Route exact path="/ingredients">
-          <Ingredients />
+          <Ingredients drinks={drinks}/>
         </Route>
       </Switch>
     </div>

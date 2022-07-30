@@ -5,7 +5,7 @@ function NavBar(){
 return(
     <div  className="header">
         <h2>Cocktails and Culture</h2>
-       <div className="header">
+       <div className="nav-bar">
         <NavLink to="/">
             Home
         </NavLink>
@@ -16,7 +16,7 @@ return(
             Cocktails
         </NavLink>
         <NavLink to="/ingredients">
-            Ingredient
+            Ingredients
         </NavLink>
        </div>
     </div>

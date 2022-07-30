@@ -1,3 +1,8 @@
+a{
+  padding: 10px;
+  text-decoration: none;
+  text-align-last: left;
+}
 .body{
   background-color: lightblue;
 }
@@ -22,20 +27,13 @@ margin-left: 500px;
   cursor: pointer;
   font-family: sans-serif;
   height:80px;
-  
 }
-/* .links{
-  display: flex;
-  background-color: black;
-} */
+
 li{
   list-style-type: none;
   padding: 1rem;
 }
-/* .photo{
-  width: 150px;
-  height: 80px
-} */
+
 .heading{
   font-family:monospace;
 }
@@ -45,5 +43,9 @@ li{
   padding: 3px;
   color: black;
   display: block;
+  height:150px;
+  background-color: beige;
 }
-
+.nav-bar>Home{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

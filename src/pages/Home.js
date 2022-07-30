@@ -3,6 +3,7 @@ import Cocktail from "../components/Cocktail";
 import CockTailList from "../components/CockTailList";
 // import SearchForm from "../components/SearchForm";
 import Footer from "../components/Footer"
+import Ingredients from "./Ingredients";
 
 
 const Home = ({cocktailsDisplay}) => {
@@ -45,6 +46,7 @@ function handleChange(event){
         {drinks}
         </div>
         {/* <Cocktail /> */}
+        <Ingredients />
         <CockTailList/> 
         <Footer />
       </main>
