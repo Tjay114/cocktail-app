@@ -20,18 +20,22 @@ margin-left: 500px;
   align-items: center;
   justify-content: space-around;
   cursor: pointer;
+  font-family: sans-serif;
+  height:80px;
+  
 }
-.links{
+/* .links{
   display: flex;
-}
+  background-color: black;
+} */
 li{
   list-style-type: none;
   padding: 1rem;
 }
-.photo{
+/* .photo{
   width: 150px;
   height: 80px
-}
+} */
 .heading{
   font-family:monospace;
 }
