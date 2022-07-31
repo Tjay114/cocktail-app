@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Cocktail from "../components/Cocktail";
 import CockTailList from "../components/CockTailList";
-// import SearchForm from "../components/SearchForm";
 import Footer from "../components/Footer"
 import Ingredients from "./Ingredients";
 

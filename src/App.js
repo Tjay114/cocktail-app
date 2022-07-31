@@ -14,7 +14,7 @@ function App() {
   // 
   // const [tailcock, setTailCock] = useState([])
   useEffect(() => {
-    fetch("http://localhost:3000/drinks")
+    fetch("https://cocktailjson.herokuapp.com/drinks")
       .then((response) => response.json())
       .then((data) => 
         setCocktails(data)
